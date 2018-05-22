@@ -1,0 +1,80 @@
+main {
+  background: center;
+  background-image: url(https://github.com/ACCSoftwareBootcamp/Students2018/blob/master/03-CSS-Bootstrap/Projects/2.FullSiteProject/img/backgrounds/background1.jpg?raw=true);
+  background-repeat: no-repeat;
+  overflow: auto;
+  background-size: cover;
+}
+
+.jumbotron-content {
+  margin-top: 550px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 10px;
+  font-stretch: ultra-expanded;
+  font-weight: 900;
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+
+.smiley {
+  float: left !important;
+  height: 22px;
+  width: 25px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.navbar-brand {
+  font-family: 'Anton', sans-serif;
+  color: black !important;
+}
+
+.footer-bottom {
+  color: white;
+  background-color: #263238 !important;
+  position: relative;
+  /*keep relative positioning to prevent section overlays*/
+  height: auto;
+  /* added auto height for responsive purposes*/
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-bottom .navbar {
+  text-decoration: none;
+}
+
+.footer-bottom {
+  color: #1E74FF;
+}
+
+.footer-bottom h3 {
+  color: white;
+}
+
+.smiley1 {
+  float: left;
+  height: 22px;
+  width: 25px;
+  margin-top: 12px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.col-sm-2 ul {
+  padding-left: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.col-sm-2 a {
+  text-decoration: none;
+  list-style: none !important;
+  color: white;
+}
+
+.col-sm-12 {
+  font-family: 'Anton', sans-serif;
+  bottom: 0;
+}

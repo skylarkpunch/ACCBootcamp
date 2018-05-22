@@ -1,0 +1,42 @@
+
+body {
+  background: center;
+background-image: url(https://github.com/ACCSoftwareBootcamp/Students2018/blob/master/03-CSS-Bootstrap/Projects/1.LandingPageProject/img/background.jpg?raw=true);
+  background-repeat: no-repeat;
+  overflow: auto;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+
+.text-center h1 {
+  color: white;
+  font-size: 60px;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+.text-center {
+  margin-top: 200px;
+  font-family: Arial;
+}
+
+
+
+.fa {
+  line-height: 50px !important;
+  font-size: 18px !important;
+  color: gray;
+}
+
+nav {
+  color: gray;
+  font-family: Arial;
+}
+
+
+.btn-primary {
+  background-color: green;
+}
+

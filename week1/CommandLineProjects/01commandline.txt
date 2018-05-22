@@ -1,0 +1,23 @@
+ashley@Skylark:~$ cd Desktop/
+ashley@Skylark:~/Desktop$ mkdir soups
+ashley@Skylark:~/Desktop$ cd soups/
+ashley@Skylark:~/Desktop/soups$ touch ChickenNoodle.html
+ashley@Skylark:~/Desktop/soups$ mkdir js
+ashley@Skylark:~/Desktop/soups$ cd js/
+ashley@Skylark:~/Desktop/soups/js$ pwd
+/home/ashley/Desktop/soups/js
+ashley@Skylark:~/Desktop/soups/js$ cd ..
+ashley@Skylark:~/Desktop/soups$ touch Desktop/soups/js/CreamyTomato.js
+touch: cannot touch 'Desktop/soups/js/CreamyTomato.js': No such file or directory
+ashley@Skylark:~/Desktop/soups$ pwd
+/home/ashley/Desktop/soups
+ashley@Skylark:~/Desktop/soups$ touch js/CreamyTomato.js
+ashley@Skylark:~/Desktop/soups$ ls
+ChickenNoodle.html  js
+ashley@Skylark:~/Desktop/soups$ touch readme.txt
+ashley@Skylark:~/Desktop/soups$ rm readme.txt 
+ashley@Skylark:~/Desktop/soups$ cd js/
+ashley@Skylark:~/Desktop/soups/js$ mv CreamyTomato.js BroccoliCheddar.js
+ashley@Skylark:~/Desktop/soups/js$ ls
+BroccoliCheddar.js
+ashley@Skylark:~/Desktop/soups/js$ 

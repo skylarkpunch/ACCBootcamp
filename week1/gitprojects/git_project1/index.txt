@@ -1,0 +1,148 @@
+ashley@Skylark:~$ cd Desktop/ACCBootcamp/Ashley/week1/
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1$ ls -al
+total 12
+drwxrwxr-x 3 ashley ashley 4096 Mar 31 15:33 .
+drwxrwxr-x 5 ashley ashley 4096 Mar 31 15:33 ..
+drwxrwxr-x 2 ashley ashley 4096 Mar 31 15:33 CommandLineProjects
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1$ mkdir gitprojects
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1$ cd gitprojects/
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects$ mkdir git_project1
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects$ mkdir emptyfolderashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects$ cd emptyfolder/
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git init
+Initialized empty Git repository in /home/ashley/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder/.git/
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ touch index.html
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ echo "
+> <!DOCTYPE html>
+bash: !DOCTYPE: event not found
+> <html lang="en">
+>   
+>   <head>
+>     <meta charset="utf-8">
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>     <title>Title Goes Here</title>
+>   </head>
+>   
+>   <body>
+>   
+>   </body>
+>   
+> </html>" >> index.html
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git add index.html
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git commit -C "Added HTML file."
+fatal: could not lookup commit Added HTML file.
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git commit index.html -C "Added HTML file"
+fatal: could not lookup commit Added HTML file
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git commit index.html -m "Added HTML file"
+[master (root-commit) bf28638] Added HTML file
+ 1 file changed, 14 insertions(+)
+ create mode 100644 index.html
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ pwd
+/home/ashley/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ touch style.css
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git add style.css
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git commit -m "Added CSS File."
+[master fc9daf7] Added CSS File.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style.css
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ touch part1.js part2.js
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git add *.js
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   part1.js
+	new file:   part2.js
+
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git commit *.js -m "Adding JS Files."e
+[master e29c3ce] Adding JS Files.e
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 part1.js
+ create mode 100644 part2.js
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git log
+commit e29c3cea57bc97546055d9316487a2abb3c4e4b5
+Author: Ashley Hill <anashleyonahill@gmail.com>
+Date:   Sat Mar 31 15:53:27 2018 -0500
+
+    Adding JS Files.e
+
+commit fc9daf754499453e1ee2520a821d32692f89caf3
+Author: Ashley Hill <anashleyonahill@gmail.com>
+Date:   Sat Mar 31 15:50:55 2018 -0500
+
+    Added CSS File.
+
+commit bf28638fe7971fd2ae0a1e6fffba1877bab3945b
+Author: Ashley Hill <anashleyonahill@gmail.com>
+Date:   Sat Mar 31 15:49:19 2018 -0500
+
+    Added HTML file
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git log ..
+fatal: ..: '..' is outside repository
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ git log .
+commit e29c3cea57bc97546055d9316487a2abb3c4e4b5
+Author: Ashley Hill <anashleyonahill@gmail.com>
+Date:   Sat Mar 31 15:53:27 2018 -0500
+
+    Adding JS Files.e
+
+commit fc9daf754499453e1ee2520a821d32692f89caf3
+Author: Ashley Hill <anashleyonahill@gmail.com>
+Date:   Sat Mar 31 15:50:55 2018 -0500
+
+    Added CSS File.
+
+commit bf28638fe7971fd2ae0a1e6fffba1877bab3945b
+Author: Ashley Hill <anashleyonahill@gmail.com>
+Date:   Sat Mar 31 15:49:19 2018 -0500
+
+    Added HTML file
+ashley@Skylark:~/Desktop/ACCBootcamp/Ashley/week1/gitprojects/emptyfolder$ \

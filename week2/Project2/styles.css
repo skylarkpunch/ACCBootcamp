@@ -1,0 +1,11 @@
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+img {
+  width: 550px;
+  margin: auto;
+}

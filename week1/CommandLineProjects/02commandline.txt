@@ -1,0 +1,41 @@
+ashley@Skylark:~$ pwd
+/home/ashley
+ashley@Skylark:~$ cd
+ashley@Skylark:~$ cd Desktop/
+ashley@Skylark:~/Desktop$ mkdir drinks
+ashley@Skylark:~/Desktop$ mkdir drinks/smoothies/ drinks/frozendrinks/ drinks/icedspecialtydrinks
+ashley@Skylark:~/Desktop$ ls
+ACCBootcamp  drinks  google-chrome.desktop  soups
+ashley@Skylark:~/Desktop$ ls -l
+total 24
+drwxrwxr-x 3 ashley ashley 4096 Mar 27 11:22 ACCBootcamp
+drwxrwxr-x 5 ashley ashley 4096 Mar 27 11:37 drinks
+-rwxr-xr-x 1 ashley ashley 8416 Mar 21 17:58 google-chrome.desktop
+drwxrwxr-x 3 ashley ashley 4096 Mar 27 11:19 soups
+ashley@Skylark:~/Desktop$ ls -al
+total 32
+drwxr-xr-x  5 ashley ashley 4096 Mar 27 11:29 .
+drwxr-xr-x 27 ashley ashley 4096 Mar 27 05:49 ..
+drwxrwxr-x  3 ashley ashley 4096 Mar 27 11:22 ACCBootcamp
+drwxrwxr-x  5 ashley ashley 4096 Mar 27 11:37 drinks
+-rwxr-xr-x  1 ashley ashley 8416 Mar 21 17:58 google-chrome.desktop
+drwxrwxr-x  3 ashley ashley 4096 Mar 27 11:19 soups
+ashley@Skylark:~/Desktop$ mv drinks/smoothies/ drinks/powersmoothies
+ashley@Skylark:~/Desktop$ touch drinks/powersmoothies/peachandblueberry.txt greenpassion.txt superfruit.txt
+ashley@Skylark:~/Desktop$ touch drinks/frozendrinks/watermelonstrawberrylemonade.html caramel.html mocha.html
+ashley@Skylark:~/Desktop$ mv caramel.html && m
+Display all 120 possibilities? (y or n)
+ashley@Skylark:~/Desktop$ mv caramel.html && mocha.html drinks/frozendrinks/
+mv: missing destination file operand after 'caramel.html'
+Try 'mv --help' for more information.
+ashley@Skylark:~/Desktop$ mv caramel.html drinks/frozendrinks/
+ashley@Skylark:~/Desktop$ mv mocha.html drinks/frozendrinks/
+ashley@Skylark:~/Desktop$ mv greenpassion.txt drinks/powersmoothies/
+ashley@Skylark:~/Desktop$ mv superfruit.txt drinks/powersmoothies/
+ashley@Skylark:~/Desktop$ touch drinks/icedspecialtydrinks/caramellatte.css drinks/icedspecialtydrinks/chaitealatte.css drinks/icedspecialtydrinks/caffemocha.css drinks/icedspecialtydrinks/caffelatte.css
+ashley@Skylark:~/Desktop$ ls drinks/icedspecialtydrinks/
+caffelatte.css  caffemocha.css  caramellatte.css  chaitealatte.css
+ashley@Skylark:~/Desktop$ pwd
+/home/ashley/Desktop
+ashley@Skylark:~/Desktop$ rm drinks/icedspecialtydrinks/caffelatte.css 
+ashley@Skylark:~/Desktop$ 

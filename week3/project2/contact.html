@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Social</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+</head>
+
+
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        <a class="navbar-brand" href="home.html"><img class="smiley" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjU2LDUxMmMxNDEuMzg1LDAsMjU2LTExNC42MTUsMjU2LTI1NlMzOTcuMzg1LDAsMjU2LDBDMTE0LjYxNSwwLDAsMTE0LjYxNSwwLDI1NlMxMTQuNjE1LDUxMiwyNTYsNTEyeiBNMjU2LDQ4ICAgYzExNC44NzUsMCwyMDgsOTMuMTI1LDIwOCwyMDhzLTkzLjEyNSwyMDgtMjA4LDIwOFM0OCwzNzAuODc1LDQ4LDI1NlMxNDEuMTI1LDQ4LDI1Niw0OHogTTk2LDI1NnYzMmMwLDcwLjQsNTcuNiwxMjgsMTI4LDEyOGg2NCAgIGM3MC40LDAsMTI4LTU3LjYsMTI4LTEyOHYtMzJIOTZ6IE0xOTIsMzc4LjQ5NGMtMTMuMjY5LTQuNzI5LTI1LjQ2Mi0xMi40MTEtMzUuNzcyLTIyLjcyM0MxMzguMDI1LDMzNy41NywxMjgsMzEzLjUwMSwxMjgsMjg4aDY0ICAgVjM3OC40OTR6IE0yODgsMzg0aC02NHYtOTZoNjRWMzg0eiBNMzU1Ljc3MSwzNTUuNzcxYy0xMC4zMTEsMTAuMzEyLTIyLjUwNiwxNy45OTQtMzUuNzcxLDIyLjcyM1YyODhoNjQgICBDMzg0LDMxMy41MDEsMzczLjk3NywzMzcuNTcsMzU1Ljc3MSwzNTUuNzcxeiBNMTEyLjY3NiwxOTJDMTEyLjY3NywxOTIsMTEyLjY3NiwxOTIsMTEyLjY3NiwxOTJjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NSAgIEMxMjUuNjE3LDE2NS4zMTMsMTQxLjM3MiwxNTIsMTYwLDE1MnMzNC4zODMsMTMuMzEzLDM3LjQ2MiwzMS42NTVjMC44MDgsNC44MTYsNC45NzgsOC4zNDUsOS44NjEsOC4zNDUgICBjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NGMwLjU0MS0zLjIxOCwwLjgxNC02LjQ2NywwLjgxNC05LjY1NmMwLTMxLjk4MS0yNi4wMTktNTgtNTgtNThzLTU4LDI2LjAxOS01OCw1OCAgIGMwLDMuMTg5LDAuMjc0LDYuNDM4LDAuODE0LDkuNjU2QzEwMy42MjMsMTg4LjQ3MiwxMDcuNzkzLDE5MiwxMTIuNjc2LDE5MnogTTMwNC42NzYsMTkyQzMwNC42NzgsMTkyLDMwNC42NzYsMTkyLDMwNC42NzYsMTkyICAgYzQuODg1LDAsOS4wNTctMy41MjgsOS44NjEtOC4zNDVDMzE3LjYxNywxNjUuMzEzLDMzMy4zNzEsMTUyLDM1MiwxNTJzMzQuMzgzLDEzLjMxMywzNy40NjMsMzEuNjU1ICAgYzAuODA3LDQuODE2LDQuOTc5LDguMzQ1LDkuODU5LDguMzQ1YzQuODgzLDAsOS4wNTUtMy41MjgsOS44NjEtOC4zNDRjMC41NDEtMy4yMTgsMC44MTItNi40NjcsMC44MTItOS42NTYgICBjMC0zMS45ODEtMjYuMDItNTgtNTgtNThzLTU3Ljk5OSwyNi4wMTktNTcuOTk5LDU4YzAsMy4xODksMC4yNzEsNi40MzgsMC44MTIsOS42NTZDMjk1LjYyMywxODguNDcyLDI5OS43OTMsMTkyLDMwNC42NzYsMTkyeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">The Social</a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbar-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
+
+
+        </ul>
+        <form id="signin" class="navbar-form navbar-right" role="form">
+          <div class="input-group">
+            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+          </div>
+
+          <div class="input-group">
+            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+          </div>
+
+          <button type="login" class="btn btn-default">Login</button>
+          <button type="Register" class="btn btn-default">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <div class="jumbotron-content text-center">
+            <h1>WISDOM THROUGH ADVERSITY. UNITY THROUGH PURPOSE</h1>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-left" id="form">
+        <form id="contactinfo">
+          <div class="form-group">
+            <label for="exampleInputUsername">Name</label>
+            <input type="text" class="form-control" id="" placeholder=" Your Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail">Email Address</label>
+            <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Your Email">
+            <p>We'll never share your email with anyone else.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="description"> What would you like to share with us?</label>
+            <textarea class="form-control" id="description" placeholder=""></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputUsername">File Input</label>
+            <br>
+
+            <label class="btn-bs-file btn btn-xs ">
+                            <input type="file" />
+                          </label>
+                  <p>You can upload images of PDF files if necessary.</p>
+            <h1 class="page-header">Are you a current user?</h1>
+            <div class="radio">
+              <label><input type="radio" class="my-radio" name="optradio">Yes, I am.</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" class="my-radio" name="optradio">Not yet, but I will be soon. I promise</label>
+            </div>
+            <br>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">I am not a robot.</label>
+              <br>
+              <button type="button" class="btn btn-primary">Submit</button>
+
+            </div>
+
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <div class="content">
+          <h1>We really want to hear from you.</h1>
+          <h2><small>Your feedback is important to us. We are continuously improving our products and your data helps us make those improvements</small></h2>
+          <h4><small>Please be patient with us as we are currently revamping our system. If you do not receive a response within 48 hours, it means we are too busy to reply to your complaints</small></h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer-bottom">
+    <div class="container-fluid">
+
+      <!--/*****************************************************************************/-->
+      <div class="row-fluid">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <img class="smiley1" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjU2LDUxMmMxNDEuMzg1LDAsMjU2LTExNC42MTUsMjU2LTI1NlMzOTcuMzg1LDAsMjU2LDBDMTE0LjYxNSwwLDAsMTE0LjYxNSwwLDI1NlMxMTQuNjE1LDUxMiwyNTYsNTEyeiBNMjU2LDQ4ICAgYzExNC44NzUsMCwyMDgsOTMuMTI1LDIwOCwyMDhzLTkzLjEyNSwyMDgtMjA4LDIwOFM0OCwzNzAuODc1LDQ4LDI1NlMxNDEuMTI1LDQ4LDI1Niw0OHogTTk2LDI1NnYzMmMwLDcwLjQsNTcuNiwxMjgsMTI4LDEyOGg2NCAgIGM3MC40LDAsMTI4LTU3LjYsMTI4LTEyOHYtMzJIOTZ6IE0xOTIsMzc4LjQ5NGMtMTMuMjY5LTQuNzI5LTI1LjQ2Mi0xMi40MTEtMzUuNzcyLTIyLjcyM0MxMzguMDI1LDMzNy41NywxMjgsMzEzLjUwMSwxMjgsMjg4aDY0ICAgVjM3OC40OTR6IE0yODgsMzg0aC02NHYtOTZoNjRWMzg0eiBNMzU1Ljc3MSwzNTUuNzcxYy0xMC4zMTEsMTAuMzEyLTIyLjUwNiwxNy45OTQtMzUuNzcxLDIyLjcyM1YyODhoNjQgICBDMzg0LDMxMy41MDEsMzczLjk3NywzMzcuNTcsMzU1Ljc3MSwzNTUuNzcxeiBNMTEyLjY3NiwxOTJDMTEyLjY3NywxOTIsMTEyLjY3NiwxOTIsMTEyLjY3NiwxOTJjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NSAgIEMxMjUuNjE3LDE2NS4zMTMsMTQxLjM3MiwxNTIsMTYwLDE1MnMzNC4zODMsMTMuMzEzLDM3LjQ2MiwzMS42NTVjMC44MDgsNC44MTYsNC45NzgsOC4zNDUsOS44NjEsOC4zNDUgICBjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NGMwLjU0MS0zLjIxOCwwLjgxNC02LjQ2NywwLjgxNC05LjY1NmMwLTMxLjk4MS0yNi4wMTktNTgtNTgtNThzLTU4LDI2LjAxOS01OCw1OCAgIGMwLDMuMTg5LDAuMjc0LDYuNDM4LDAuODE0LDkuNjU2QzEwMy42MjMsMTg4LjQ3MiwxMDcuNzkzLDE5MiwxMTIuNjc2LDE5MnogTTMwNC42NzYsMTkyQzMwNC42NzgsMTkyLDMwNC42NzYsMTkyLDMwNC42NzYsMTkyICAgYzQuODg1LDAsOS4wNTctMy41MjgsOS44NjEtOC4zNDVDMzE3LjYxNywxNjUuMzEzLDMzMy4zNzEsMTUyLDM1MiwxNTJzMzQuMzgzLDEzLjMxMywzNy40NjMsMzEuNjU1ICAgYzAuODA3LDQuODE2LDQuOTc5LDguMzQ1LDkuODU5LDguMzQ1YzQuODgzLDAsOS4wNTUtMy41MjgsOS44NjEtOC4zNDRjMC41NDEtMy4yMTgsMC44MTItNi40NjcsMC44MTItOS42NTYgICBjMC0zMS45ODEtMjYuMDItNTgtNTgtNThzLTU3Ljk5OSwyNi4wMTktNTcuOTk5LDU4YzAsMy4xODksMC4yNzEsNi40MzgsMC44MTIsOS42NTZDMjk1LjYyMywxODguNDcyLDI5OS43OTMsMTkyLDMwNC42NzYsMTkyeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+          <h3>The Social</h3>
+
+
+
+        </div>
+        <div class="col-sm-2">
+          <h4>Our App</h4>
+          <ul>
+            <li><a href="#">News Feed</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Photos</a></li>
+
+
+
+          </ul>
+
+        </div>
+
+        <div class="col-sm-2">
+          <h4>How to</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Basics</a></li>
+            <li><a href="#">Create a Page</a></li>
+            <li><a href="#">Create an Ad</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-sm-2">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

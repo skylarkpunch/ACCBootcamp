@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Social</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+</head>
+
+
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        <a class="navbar-brand" href="home.html"><img class="smiley" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjU2LDUxMmMxNDEuMzg1LDAsMjU2LTExNC42MTUsMjU2LTI1NlMzOTcuMzg1LDAsMjU2LDBDMTE0LjYxNSwwLDAsMTE0LjYxNSwwLDI1NlMxMTQuNjE1LDUxMiwyNTYsNTEyeiBNMjU2LDQ4ICAgYzExNC44NzUsMCwyMDgsOTMuMTI1LDIwOCwyMDhzLTkzLjEyNSwyMDgtMjA4LDIwOFM0OCwzNzAuODc1LDQ4LDI1NlMxNDEuMTI1LDQ4LDI1Niw0OHogTTk2LDI1NnYzMmMwLDcwLjQsNTcuNiwxMjgsMTI4LDEyOGg2NCAgIGM3MC40LDAsMTI4LTU3LjYsMTI4LTEyOHYtMzJIOTZ6IE0xOTIsMzc4LjQ5NGMtMTMuMjY5LTQuNzI5LTI1LjQ2Mi0xMi40MTEtMzUuNzcyLTIyLjcyM0MxMzguMDI1LDMzNy41NywxMjgsMzEzLjUwMSwxMjgsMjg4aDY0ICAgVjM3OC40OTR6IE0yODgsMzg0aC02NHYtOTZoNjRWMzg0eiBNMzU1Ljc3MSwzNTUuNzcxYy0xMC4zMTEsMTAuMzEyLTIyLjUwNiwxNy45OTQtMzUuNzcxLDIyLjcyM1YyODhoNjQgICBDMzg0LDMxMy41MDEsMzczLjk3NywzMzcuNTcsMzU1Ljc3MSwzNTUuNzcxeiBNMTEyLjY3NiwxOTJDMTEyLjY3NywxOTIsMTEyLjY3NiwxOTIsMTEyLjY3NiwxOTJjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NSAgIEMxMjUuNjE3LDE2NS4zMTMsMTQxLjM3MiwxNTIsMTYwLDE1MnMzNC4zODMsMTMuMzEzLDM3LjQ2MiwzMS42NTVjMC44MDgsNC44MTYsNC45NzgsOC4zNDUsOS44NjEsOC4zNDUgICBjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NGMwLjU0MS0zLjIxOCwwLjgxNC02LjQ2NywwLjgxNC05LjY1NmMwLTMxLjk4MS0yNi4wMTktNTgtNTgtNThzLTU4LDI2LjAxOS01OCw1OCAgIGMwLDMuMTg5LDAuMjc0LDYuNDM4LDAuODE0LDkuNjU2QzEwMy42MjMsMTg4LjQ3MiwxMDcuNzkzLDE5MiwxMTIuNjc2LDE5MnogTTMwNC42NzYsMTkyQzMwNC42NzgsMTkyLDMwNC42NzYsMTkyLDMwNC42NzYsMTkyICAgYzQuODg1LDAsOS4wNTctMy41MjgsOS44NjEtOC4zNDVDMzE3LjYxNywxNjUuMzEzLDMzMy4zNzEsMTUyLDM1MiwxNTJzMzQuMzgzLDEzLjMxMywzNy40NjMsMzEuNjU1ICAgYzAuODA3LDQuODE2LDQuOTc5LDguMzQ1LDkuODU5LDguMzQ1YzQuODgzLDAsOS4wNTUtMy41MjgsOS44NjEtOC4zNDRjMC41NDEtMy4yMTgsMC44MTItNi40NjcsMC44MTItOS42NTYgICBjMC0zMS45ODEtMjYuMDItNTgtNTgtNThzLTU3Ljk5OSwyNi4wMTktNTcuOTk5LDU4YzAsMy4xODksMC4yNzEsNi40MzgsMC44MTIsOS42NTZDMjk1LjYyMywxODguNDcyLDI5OS43OTMsMTkyLDMwNC42NzYsMTkyeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">The Social</a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbar-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+          <li class="active"><a href="about.html">About<span class="sr-only">(current)</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+
+
+        </ul>
+        <form id="signin" class="navbar-form navbar-right" role="form">
+          <div class="input-group">
+            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+          </div>
+
+          <div class="input-group">
+            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+          </div>
+
+          <button type="login" class="btn btn-default">Login</button>
+          <button type="Register" class="btn btn-default">Register</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <div class="jumbotron-content text-center">
+            <h1>LET US PROCEED. WE ARE POISED FOR VICTORY.</h1>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="row" id="white">
+      <div class="section">
+
+        <div class="col-sm-6">
+          <img id="pic" src="https://github.com/ACCSoftwareBootcamp/Students2018/blob/master/03-CSS-Bootstrap/Projects/2.FullSiteProject/img/section/4.jpg?raw=true">
+        </div>
+        <div class="col-sm-5 col-sm-offset-1" id="black">
+
+          <h6>Victory Awaits</h6>
+          <h1>Harness the power of the web unlike anyone else.</h1>
+          <p class="lead">Program, or be programmed. Why just sit back and use technology when you can create it?</p>
+          <p>Join us as we begin our journey towards world domination. We will achieve and create things that the rest of the world can only dream of.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="navy">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="section">
+
+          <div class="col-sm-6" id="text">
+            <h6>THE SKIES AWAIT.</h6>
+            <h1>There's never been a more fascinating time in human history.</h1>
+            <p class="lead">We live in a different world now. If you don't know how to code, you'll get left behind.</p>
+            <p>The journey to get to where you want to be is a long and arduous path. But for those who choose to take it, they will march to victory.</p>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <img id="pic" src="https://github.com/ACCSoftwareBootcamp/Students2018/blob/master/03-CSS-Bootstrap/Projects/2.FullSiteProject/img/section/3.jpg?raw=true">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row" id="white">
+      <div class="section">
+
+        <div class="col-sm-6">
+          <img id="pic" src="https://github.com/ACCSoftwareBootcamp/Students2018/blob/master/03-CSS-Bootstrap/Projects/2.FullSiteProject/img/section/7.jpg?raw=true">
+        </div>
+        <div class="col-sm-5 col-sm-offset-1" id="black">
+          <div class="bottompart">
+
+
+            <h6>I AM EAGER TO STRIKE.</h6>
+            <h1>A skill worth learning.</h1>
+            <p>You have access to a lifetime of knowledge in your pocket, and it's waiting to be consumed. Use this to gain an advantage over your opponents.</p>
+            <button type="button" class="btn btn-primary">Join us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-bottom">
+    <div class="container-fluid">
+
+      <!--/*****************************************************************************/-->
+      <div class="row-fluid">
+        <div class="col-sm-6">
+          <img class="smiley1" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjU2LDUxMmMxNDEuMzg1LDAsMjU2LTExNC42MTUsMjU2LTI1NlMzOTcuMzg1LDAsMjU2LDBDMTE0LjYxNSwwLDAsMTE0LjYxNSwwLDI1NlMxMTQuNjE1LDUxMiwyNTYsNTEyeiBNMjU2LDQ4ICAgYzExNC44NzUsMCwyMDgsOTMuMTI1LDIwOCwyMDhzLTkzLjEyNSwyMDgtMjA4LDIwOFM0OCwzNzAuODc1LDQ4LDI1NlMxNDEuMTI1LDQ4LDI1Niw0OHogTTk2LDI1NnYzMmMwLDcwLjQsNTcuNiwxMjgsMTI4LDEyOGg2NCAgIGM3MC40LDAsMTI4LTU3LjYsMTI4LTEyOHYtMzJIOTZ6IE0xOTIsMzc4LjQ5NGMtMTMuMjY5LTQuNzI5LTI1LjQ2Mi0xMi40MTEtMzUuNzcyLTIyLjcyM0MxMzguMDI1LDMzNy41NywxMjgsMzEzLjUwMSwxMjgsMjg4aDY0ICAgVjM3OC40OTR6IE0yODgsMzg0aC02NHYtOTZoNjRWMzg0eiBNMzU1Ljc3MSwzNTUuNzcxYy0xMC4zMTEsMTAuMzEyLTIyLjUwNiwxNy45OTQtMzUuNzcxLDIyLjcyM1YyODhoNjQgICBDMzg0LDMxMy41MDEsMzczLjk3NywzMzcuNTcsMzU1Ljc3MSwzNTUuNzcxeiBNMTEyLjY3NiwxOTJDMTEyLjY3NywxOTIsMTEyLjY3NiwxOTIsMTEyLjY3NiwxOTJjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NSAgIEMxMjUuNjE3LDE2NS4zMTMsMTQxLjM3MiwxNTIsMTYwLDE1MnMzNC4zODMsMTMuMzEzLDM3LjQ2MiwzMS42NTVjMC44MDgsNC44MTYsNC45NzgsOC4zNDUsOS44NjEsOC4zNDUgICBjNC44ODQsMCw5LjA1NC0zLjUyOCw5Ljg2Mi04LjM0NGMwLjU0MS0zLjIxOCwwLjgxNC02LjQ2NywwLjgxNC05LjY1NmMwLTMxLjk4MS0yNi4wMTktNTgtNTgtNThzLTU4LDI2LjAxOS01OCw1OCAgIGMwLDMuMTg5LDAuMjc0LDYuNDM4LDAuODE0LDkuNjU2QzEwMy42MjMsMTg4LjQ3MiwxMDcuNzkzLDE5MiwxMTIuNjc2LDE5MnogTTMwNC42NzYsMTkyQzMwNC42NzgsMTkyLDMwNC42NzYsMTkyLDMwNC42NzYsMTkyICAgYzQuODg1LDAsOS4wNTctMy41MjgsOS44NjEtOC4zNDVDMzE3LjYxNywxNjUuMzEzLDMzMy4zNzEsMTUyLDM1MiwxNTJzMzQuMzgzLDEzLjMxMywzNy40NjMsMzEuNjU1ICAgYzAuODA3LDQuODE2LDQuOTc5LDguMzQ1LDkuODU5LDguMzQ1YzQuODgzLDAsOS4wNTUtMy41MjgsOS44NjEtOC4zNDRjMC41NDEtMy4yMTgsMC44MTItNi40NjcsMC44MTItOS42NTYgICBjMC0zMS45ODEtMjYuMDItNTgtNTgtNThzLTU3Ljk5OSwyNi4wMTktNTcuOTk5LDU4YzAsMy4xODksMC4yNzEsNi40MzgsMC44MTIsOS42NTZDMjk1LjYyMywxODguNDcyLDI5OS43OTMsMTkyLDMwNC42NzYsMTkyeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+
+          <h3>The Social</h3>
+
+
+
+        </div>
+        <div class="col-sm-2">
+          <h4>Our App</h4>
+          <ul>
+            <li><a href="#">News Feed</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Photos</a></li>
+
+
+
+          </ul>
+
+        </div>
+
+        <div class="col-sm-2">
+          <h4>How to</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Basics</a></li>
+            <li><a href="#">Create a Page</a></li>
+            <li><a href="#">Create an Ad</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-sm-2">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
