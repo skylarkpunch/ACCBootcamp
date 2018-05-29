@@ -1,0 +1,6 @@
+HTTP Response Codes
+
+Completed exericise through Postman.com and read additional material. 
+
+After reviewing HTTP status codes and their definitions, let it be noted that Error code 418 is the best. #teapot
+
