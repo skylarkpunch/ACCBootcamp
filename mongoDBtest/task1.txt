@@ -1,0 +1,15 @@
+//Output after installing, creating and updating mongoDB test database and collection.
+
+
+ashley@Skylark:~$ mongo
+MongoDB shell version: 3.2.20
+connecting to: test
+> use test
+switched to db test
+> db.friends.find()
+{ "_id" : ObjectId("5b0eae4b408e94a9ea11f8e2"), "name" : "Katie", "occupation" : "singer" }
+{ "_id" : ObjectId("5b0eaea5408e94a9ea11f8e3"), "occupation" : "barista", "name" : "Jim" }
+{ "_id" : ObjectId("5b0eaf16408e94a9ea11f8e4"), "name" : "Jenna", "occupation" : "programmer" }
+> ^C
+bye
+ashley@Skylark:~$ 
